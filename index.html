@@ -198,7 +198,22 @@
     
     .project-button:hover {
         transform: translateX(4px);
+    
     }
+
+    /*UPDATE */
+.project-buttons-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 1rem; /* Space between buttons */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+/* Optional: UPDATE*/
+.project-button {
+    white-space: nowrap;
+    flex-shrink: 1;
+}
     
     /* Typing animation */
     .typing-animation::after {
@@ -542,7 +557,7 @@
                     <div class="mono text-sm opacity-60 mb-2 project-number">01</div>
                     <h3 class="text-2xl font-bold mb-4">Simple Todo App</h3>
                     <p class="mb-6 leading-relaxed">
-                       This is a basic console-based To-Do List application built with Python. It allows users to add, view, and remove tasks using a simple text-based menu. All tasks are saved in a text file (tasks.txt) so they can be accessed even after restarting the app. It's great for beginners to learn file handling, lists, and user input in Python.
+                       This is a basic <strong>console-based To-Do List</strong> application built with Python. It allows users to add, view, and remove tasks using a simple text-based menu. All tasks are saved in a text file (tasks.txt) so they can be accessed even after restarting the app. It's great for beginners to learn file handling, lists, and user input in Python.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="mono text-xs border border-primary dark:border-secondary px-2 py-1 project-tag">Python</span>
@@ -564,7 +579,7 @@
                     <div class="mono text-sm opacity-60 mb-2 project-number">02</div>
                     <h3 class="text-2xl font-bold mb-4">Basic Calculator</h3>
                     <p class="mb-6 leading-relaxed">
-                       This is a basic Python calculator that performs arithmetic operations like addition, subtraction, multiplication, and division. It asks the user to enter two numbers and an operator (+, -, *, or /). It also handles division by zero and shows an error for invalid operators. This project helps understand user input, data conversion, conditionals, and basic error handling in Python.
+                       This is a basic <strong>Python calculator</strong> that performs arithmetic operations like addition, subtraction, multiplication, and division. It asks the user to enter two numbers and an operator <strong>(+, -, *, or /)</strong>. It also handles division by zero and shows an error for invalid operators. This project helps understand user input, data conversion, conditionals, and basic error handling in Python.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="mono text-xs border border-primary dark:border-secondary px-2 py-1 project-tag">Python</span>
@@ -587,7 +602,7 @@
                     <h3 class="text-2xl font-bold mb-4">Scrambled Word Game</h3>
                     <p class="mb-6 leading-relaxed">
                          Scrambled Word Game — where letters are shuffled like your brain on a Monday morning and your job is to unscramble the chaos before the game calls you out!
-Built using pure HTML, CSS, and JavaScript (no cheat codes or frameworks!), this game throws random words at you — but twisted. Your mission? Guess the correct word before your brain gives up and blames autocorrect.
+Built using pure<strong>HTML, CSS</strong> and <strong>JavaScript</strong> (no cheat codes or frameworks!), this game throws random words at you — but twisted. Your mission? Guess the correct word before your brain gives up and blames autocorrect.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="mono text-xs border border-primary dark:border-secondary px-2 py-1 project-tag">HTML</span>
@@ -602,29 +617,36 @@ Built using pure HTML, CSS, and JavaScript (no cheat codes or frameworks!), this
                 </div>
             </div>
             
+            
             <div class="border border-primary dark:border-secondary p-8 hover-card">
                 <div class="project-content">
                     <div class="mono text-sm opacity-60 mb-2 project-number">04</div>
-                    <h3 class="text-2xl font-bold mb-4">Avengers themed Portfolio</h3>
+                    <h3 class="text-2xl font-bold mb-4">Crypto_Tracker</h3>
                     <p class="mb-6 leading-relaxed">
-                        This Avengers-themed portfolio turns your developer profile into a S.H.I.E.L.D. mission file. Built with HTML, Tailwind CSS, and JavaScript, it features Arc Reactor effects, animated skills, and heroic project sections. It’s a bold, cinematic way to say:
-“I code like a hero. Ready to assemble.” 🚀
+                       This project is a real-time crypto price tracker built using <strong>Python</strong> and <strong>streamlit</strong>. It helps users see the live prices of top cryptocurrencies and get email alerts when prices go above or below set limits. The goal was to make a clean and easy-to-use app for both learners and crypto users.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="mono text-xs border border-primary dark:border-secondary px-2 py-1 project-tag">HTML</span>
-                        <span class="mono text-xs border border-primary dark:border-secondary px-2 py-1 project-tag">CSS</span>
-                        <span class="mono text-xs border border-primary dark:border-secondary px-2 py-1 project-tag">JavaScript</span>
+                        <span class="mono text-xs border border-primary dark:border-secondary px-2 py-1 project-tag">Python</span>
+                        <span class="mono text-xs border border-primary dark:border-secondary px-2 py-1 project-tag">streamlit</span>
+                        <span class="mono text-xs border border-primary dark:border-secondary px-2 py-1 project-tag">plotly</span>
+                         <span class="mono text-xs border border-primary dark:border-secondary px-2 py-1 project-tag">Pandas</span>
                     </div>
-                    <div class="flex space-x-4">
-                        <a href="https://github.com/Akhildev321/Personal-Portfolio-using-CANVA-AI" 
-     target="_blank" 
-     class="mono text-sm project-button">view_code()</a>
-                        <button class="mono text-sm project-button">building()</button>
+                   <div class="flex space-x-4 project-buttons-container">
+    <a href="https://github.com/Akhildev321/Internship-Tasks" 
+       target="_blank" 
+       class="mono text-sm project-button">view_code()</a>
+    <a href="https://cryptotrackerrr.streamlit.app/" 
+       target="_blank" 
+       class="mono text-sm project-button">Live()</a>
+</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <br>
+
+
 </section>
 
 <!-- Contact Section -->
@@ -762,8 +784,8 @@ Built using pure HTML, CSS, and JavaScript (no cheat codes or frameworks!), this
         
         // Simulate loading process
         setTimeout(() => {
-            
-            const pdfUrl = 'https://drive.google.com/file/d/1E4mAs6SgjaqUhJHj4YLtp2D_vFX7zNpL/view?usp=sharing';
+            // Replace this URL with your actual PDF hosted online
+            const pdfUrl = 'https://drive.google.com/file/d/1Ljd6KPbkYyYV59frv7Gs_VjOxTjYXi13/view?usp=sharing';
             
             // Open in new tab with no download controls
             window.open(pdfUrl, '_blank', 'noopener,noreferrer');
